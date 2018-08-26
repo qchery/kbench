@@ -1,6 +1,7 @@
 dependencies {
     compile(
             project(":kbench-maven2"),
+            project(":kbench-server-controller"),
             'org.springframework.boot:spring-boot-starter-web',
     )
 }

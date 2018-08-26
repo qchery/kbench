@@ -1,17 +1,18 @@
 package com.qchery.kbench;
 
+import com.qchery.kbench.server.controller.KieServerControllerApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"org.guvnor", "com.qchery.kbench"})
 @ServletComponentScan(basePackages = "com.qchery")
 public class KBenchApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KBenchApplication.class, args);
+        SpringApplication.run(new Class[]{
+                KBenchApplication.class, KieServerControllerApplication.class
+        }, args);
     }
 
 }

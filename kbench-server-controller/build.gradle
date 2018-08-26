@@ -1,0 +1,10 @@
+ext {
+    kieVersion = "7.10.0.Final"
+}
+
+dependencies {
+    compile(
+            "org.kie.server:kie-server-controller-impl:${kieVersion}",
+            'org.springframework.boot:spring-boot-starter-web',
+    )
+}

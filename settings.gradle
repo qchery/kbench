@@ -1,4 +1,5 @@
 rootProject.name = 'kbench'
 include 'kbench-maven2'
+include 'kbench-server-controller'
 include 'kbench-web'
 
