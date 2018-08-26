@@ -17,7 +17,7 @@
 package com.qchery.kbench.backend.helpers;
 
 import com.qchery.kbench.backend.GuvnorM2Repository;
-import org.codehaus.plexus.util.IOUtil;
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,7 +76,7 @@ public class HttpPutHelper {
             outputStream = new BufferedOutputStream(new FileOutputStream(file));
 
             //Copy input
-            IOUtil.copy(inputStream, outputStream);
+            IOUtils.copy(inputStream, outputStream);
 
             response.setStatus(status);
         } catch (IOException e) {

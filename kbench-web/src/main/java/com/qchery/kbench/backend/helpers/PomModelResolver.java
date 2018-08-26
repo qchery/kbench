@@ -15,12 +15,12 @@
 
 package com.qchery.kbench.backend.helpers;
 
+import com.qchery.kbench.backend.GuvnorM2Repository;
 import org.apache.maven.project.ProjectBuildingException;
 import org.appformer.maven.integration.embedder.MavenEmbedderException;
 import org.appformer.maven.support.AFReleaseId;
 import org.appformer.maven.support.AFReleaseIdImpl;
 import org.appformer.maven.support.PomModel;
-import org.guvnor.m2repo.backend.server.GuvnorM2Repository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
