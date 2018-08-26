@@ -1,0 +1,6 @@
+dependencies {
+    compile(
+            'org.springframework.boot:spring-boot-starter-web',
+            "org.uberfire:uberfire-m2repo-editor-backend:2.7.0.Final",
+    )
+}
